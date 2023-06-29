@@ -7,7 +7,6 @@ export default function Expense() {
         <h4
           className="lg:pt-[80px] text-center mb-[30px] lg:mb-[125px] text-[24px] md:text-[28px] lg:text-[36px] font-sanB"
           data-aos="fade-down"
-          data-aos-offset="200"
         >
           PHÍ THAM DỰ
         </h4>
@@ -18,10 +17,10 @@ export default function Expense() {
             alt=""
           />
           <div className="relative lg:absolute flex gap-[25px] lg:top-[-93px] lg:left-[50%] lg:translate-x-[-50%]">
-            <div data-aos="fade-right" data-aos-offset="200">
+            <div data-aos="fade-right">
               <img src="./images/ex1.png" alt="" />
             </div>
-            <div data-aos="fade-left" data-aos-offset="200">
+            <div data-aos="fade-left">
               <img src="./images/ex2.png" alt="" />
             </div>
           </div>
@@ -32,7 +31,6 @@ export default function Expense() {
             <div
               className="flex flex-col items-center flex-1 mt-[15px] md:mt-[30px] lg:mt-0"
               data-aos="zoom-in-up"
-              data-aos-offset="200"
             >
               <h3 className="text-[32px] md:text-[60px] font-sanB text-[#F8421F] uppercase">
                 HOÀN PHÍ THAM DỰ
@@ -53,7 +51,6 @@ export default function Expense() {
         <div
           className="relative ex-box max-w-[879px] mx-auto flex items-center justify-center py-[15px] md:py-[30px] lg:mt-[90px] mt-[30px]"
           data-aos="flip-up"
-          data-aos-offset="200"
         >
           <div className="rounded-[20px] border-[4px] border-solid border-transparent absolute top-0 left-0 w-full h-full bg-[rgba(43,_43,_43,_0.60)]"></div>
           <p className="relative z-10 text-center title">

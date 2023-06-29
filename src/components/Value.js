@@ -13,7 +13,6 @@ export default function Value() {
               src="./images/upl-value1.png"
               alt=""
               data-aos="fade-right"
-              data-aos-offset="200"
               data-aos-easing="ease-in-sine"
             />
           </div>
@@ -22,7 +21,6 @@ export default function Value() {
               src="./images/upl-title.svg"
               alt=""
               data-aos="fade-up"
-              data-aos-offset="200"
               data-aos-easing="ease-in-sine"
             />
           </div>
@@ -31,7 +29,6 @@ export default function Value() {
           <img
             src="./images/upl-value2.png"
             data-aos="fade-down"
-            data-aos-offset="200"
             data-aos-easing="ease-in-sine"
             alt=""
           />
@@ -56,7 +53,6 @@ export default function Value() {
               className="px-[20px] md:pt-[40px] md:pb-[60px] md:px-[60px] bg-black md:absolute top-0 left-0"
               data-aos="fade-right"
               data-aos-duration="3000"
-              data-aos-offset="200"
             >
               <p className="font-sanT text-[16px] md:text-[20px] leading-10">
                 Nghiêm túc rằng, thành công không xảy ra một cách tình cờ.
@@ -119,14 +115,12 @@ export default function Value() {
               className="text-[20px] md:text-[32px] font-sanB mb-[10px] md:mb-[40px]"
               data-aos="fade-right"
               data-aos-duration="3000"
-              data-aos-offset="200"
             >
               May mắn thay, có RẤT NHIỀU <br /> cơ hội trên thị trường <br />{" "}
               NGAY BÂY GIỜ.
             </h3>
             <p
               data-aos="fade-up"
-              data-aos-offset="200"
               className="font-sanT text-[16px] md:text-[20px] leading-10 mb-[10px] md:mb-[40px]"
             >
               Tôi sẽ chỉ cho bạn cách sở hữu các bất động sản với giá rẻ hơn thị

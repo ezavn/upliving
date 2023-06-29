@@ -8,17 +8,15 @@ export default function Seminar() {
           <h4
             className="text-[24px] md:text-[28px] lg:text-[36px] font-sanB"
             data-aos="fade-down"
-            data-aos-offset="200"
           >
             NỘI DUNG HỘI THẢO
           </h4>
-          <h2 className="title" data-aos="fade-up" data-aos-offset="200">
+          <h2 className="title" data-aos="fade-up">
             GIẢI MÃ NHÀ SINH TIỀN
           </h2>
           <div
             className="flex flex-col mt-[40px] md:mt-[70px] gap-[8px]"
             data-aos="fade-left"
-            data-aos-offset="200"
           >
             <div className="flex items-center gap-[15px] pb-[8px] border-dashed border-b-[1px] border-[#26FDE6]">
               <div className="w-[35px] h-[38px] flex-shrink-0">

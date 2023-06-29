@@ -49,7 +49,7 @@ export default function Owner() {
               alt=""
             />
           </div>
-          <div className="block"></div>
+          {/* <div className="block"></div> */}
         </div>
       </div>
       <div className="bg-[#343331] pt-[40px] pb-[50px] text-center">

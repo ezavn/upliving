@@ -6,15 +6,18 @@ export default function Strategy() {
       <h2
         className="px-[20px] text-center text-[20px] md:text-[36px] font-sanB uppercase"
         data-aos="fade-down"
-        data-aos-offset="200"
       >
-        Nhận các chiến lược chính xác mà bạn cần để{" "}
-        <br className="hidden lg:block" /> đạt được thành công{" "}
+        Nhận các chiến lược chính xác mà bạn cần{" "}
+        <br className="hidden lg:block" /> để đạt được thành công{" "}
         <br className="block lg:hidden" /> qua nhiều thế hệ
       </h2>
       <div className="bg-[url('../public/images/shadow-overlay.png')] bg-center bg-cover pb-section">
         <div className="page-container">
-          <div className="flex lg:flex-row flex-col gap-[30px] md:gap-[50px] lg:gap-0 justify-between pt-[30px] md:pt-[70px]">
+          <div
+            className="flex lg:flex-row flex-col gap-[30px] md:gap-[50px] lg:gap-0 justify-between pt-[30px] md:pt-[70px]"
+            data-aos="fade-up"
+            ata-aos-offset="-200"
+          >
             <StrategyItem
               img="./images/upl-stra1.svg"
               title="MUA, XÂY, BÁN"
@@ -45,18 +48,13 @@ sự giàu có của gia đình bạn."
 
 const StrategyItem = ({ img, title, desc, btn }) => {
   return (
-    <div
-      className="strategy-item"
-      data-aos="fade-up"
-      data-aos-anchor-placement="bottom-bottom"
-      data-aos-offset="200"
-    >
+    <div className="strategy-item">
       <div className="img">
         <img src={img} alt="" />
       </div>
       <h3 className="title">{title}</h3>
       <p className="desc">{desc}</p>
-      <a className="btn" href="#register">
+      <a className="btn glow-on-hover " href="#register">
         <img src={btn} alt="" />
       </a>
     </div>

@@ -44,7 +44,6 @@ export default function Testi() {
         <h4
           className="text-center mb-[30px] text-[24px] md:text-[28px] lg:text-[36px] font-sanB"
           data-aos="fade-down"
-          data-aos-offset="200"
         >
           PHẢN HỒI CỦA KHÁCH HÀNG SAU HỘI THẢO
         </h4>

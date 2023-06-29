@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="hero bg-[url('../public/images/upl-hero.png')] bg-center bg-no-repeat bg-cover pt-[50px] pb-[120px] h-[90vh] md:h-auto overflow-x-hidden">
+    <section className="hero bg-[url('../public/images/upl-hero.png')] bg-center bg-no-repeat bg-cover pt-[50px] md:pb-[120px] h-[90vh] md:h-auto overflow-x-hidden">
       <div className="max-w-[900px] mx-auto relative">
         <div className="absolute bottom-[210px] left-[30px] lg:bottom-[190px] lg:left-0 md:block hidden">
           <img src="./icons/coin-icon1.svg" alt="" />
@@ -42,12 +42,12 @@ export default function Hero() {
               />
             </div>
           </div>
-          <p className="text-[16px] md:text-[20px] font-sanUL text-center px-[20px] md:px-[80px] mt-[20px] md:mt-[10px] leading-[1.8]">
+          <p className="text-[16px] md:text-[20px] font-sanUL text-justify md:text-center px-[20px] md:px-[80px] mt-[20px] md:mt-[10px] leading-[1.8]">
             Bằng lộ trình đã được minh chứng về cách đạt được thành công nhanh
             hơn và hiệu quả hơn với cộng đồng nhà đầu tư Nhà Sinh Tiền có cùng
             chí hướng.
           </p>
-          <div className="mt-[40px] text-center">
+          <div className="mt-[60px] md:mt-[40px] text-center">
             <a className="btn-grd" href="#register">
               Tham gia lộ trình
             </a>

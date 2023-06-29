@@ -7,11 +7,10 @@ export default function Benefit() {
         <h4
           className="text-[24px] md:text-[28px] lg:text-[36px] font-sanB lg:mb-[10px] text-center"
           data-aos="fade-down"
-          data-aos-offset="200"
         >
           LỢI ÍCH KHI THAM GIA HỘI THẢO
         </h4>
-        <h2 className="title" data-aos="fade-up" data-aos-offset="200">
+        <h2 className="title" data-aos="fade-up">
           GIẢI MÃ NHÀ SINH TIỀN
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 lg:gap-[50px] relative mt-[20px] md:mt-[30px] lg:mt-[50px]">

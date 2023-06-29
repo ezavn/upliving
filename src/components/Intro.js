@@ -8,7 +8,6 @@ export default function Intro() {
           <div
             className="relative flex flex-col max-w-[390px] ml-auto"
             data-aos="fade-left"
-            data-aos-offset="200"
           >
             <div className="absolute top-[-60px] left-[-105px] shadow1"></div>
             <div className="relative z-20">
@@ -33,7 +32,6 @@ export default function Intro() {
           <div
             className="grid grid-cols-4 gap-[20px] mt-[30px] md:mt-[50px]"
             data-aos="fade-right"
-            data-aos-offset="200"
           >
             <div>
               <img src="./images/intro1.png" alt="" />
@@ -55,11 +53,7 @@ export default function Intro() {
           </div>
         </div>
         <div className="flex-1">
-          <div
-            className="relative max-w-[360px]"
-            data-aos="fade-left"
-            data-aos-offset="200"
-          >
+          <div className="relative max-w-[360px]" data-aos="fade-left">
             <div className="absolute top-[50px] left-[-100px] shadow2"></div>
             <div className="relative z-20">
               <div className="mb-[10px]">

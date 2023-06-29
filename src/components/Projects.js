@@ -43,7 +43,6 @@ export default function Projects() {
         <h4
           className="text-[24px] md:text-[28px] lg:text-[36px] font-sanB text-center mb-[40px]"
           data-aos="fade-down"
-          data-aos-offset="200"
         >
           CÁC DỰ ÁN NHÀ SINH TIỀN <br /> ĐÃ ĐƯỢC UPLIVING THỰC HIỆN VÀ VẬN HÀNH
         </h4>

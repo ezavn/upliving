@@ -8,7 +8,6 @@ export default function Pro() {
           <h4
             className="text-[24px] md:text-[28px] lg:text-[36px] font-sanB mb-[15px] md:mb-0"
             data-aos="fade-down"
-            data-aos-offset="200"
           >
             CÁC CHUYÊN GIA CHIA SẺ <br className="block md:hidden" /> TẠI HỘI
             THẢO
@@ -16,7 +15,6 @@ export default function Pro() {
           <p
             className="font-sanT text-[16px] md:text-[20px]"
             data-aos="fade-down"
-            data-aos-offset="200"
           >
             Gúp bạn thực hiện đầu tư một cách an toàn, hiệu quả mà bạn không cần
             có mặt
@@ -24,13 +22,12 @@ export default function Pro() {
         </div>
         <div className="max-w-[1060px] mx-auto flex flex-col md:flex-row gap-[30px] lg:gap-[70px]">
           <div className="flex flex-col flex-1">
-            <div data-aos="fade-right" data-aos-offset="200">
+            <div data-aos="fade-right">
               <img src="./images/upl-pro1.png" alt="" />
             </div>
             <div
               className="md:ml-auto md:w-[300px] lg:w-[355px] mt-[-30px]"
               data-aos="fade-left"
-              data-aos-offset="200"
             >
               <div className="max-w-[352px] rounded-[10px] bg-[#F7AC16] px-[15px] lg:px-[28px] h-[104px] mb-[30px] flex justify-center flex-col">
                 <h4 className="text-[28px] lg:text-[32px] font-sanB text-black leading-[1]">
@@ -46,11 +43,7 @@ export default function Pro() {
             </div>
           </div>
           <div className="flex-1 flex flex-col gap-[30px]">
-            <div
-              className="flex gap-[30px] items-center"
-              data-aos="fade-left"
-              data-aos-offset="200"
-            >
+            <div className="flex gap-[30px] items-center" data-aos="fade-left">
               <div className="w-[100px] h-[100px]">
                 <img
                   className="object-cover w-full h-full"
@@ -65,11 +58,7 @@ export default function Pro() {
                 <p>Cố vấn chiến lược UPLIVING</p>
               </div>
             </div>
-            <div
-              className="flex gap-[30px] items-center"
-              data-aos="fade-left"
-              data-aos-offset="200"
-            >
+            <div className="flex gap-[30px] items-center" data-aos="fade-left">
               <div className="w-[100px] h-[100px]">
                 <img
                   className="object-cover w-full h-full"
