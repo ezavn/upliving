@@ -1,0 +1,453 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// bg-[url('../public/images/banner-renew.jpg')] bg-center bg-no-repeat bg-cover
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #000;
+    max-width: 1920px;
+    width: 100%;
+    @apply font-sanR;
+  }
+}
+
+@layer components {
+  .page-container {
+    max-width: 1370px;
+    @apply mx-auto;
+  }
+  @media (max-width: 1024px) {
+    .page-container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+.shadow1,
+.shadow2 {
+  width: 600px;
+  height: 400px;
+  border-radius: 500px;
+  opacity: 1;
+  filter: blur(184.5px);
+}
+
+.shadow1 {
+  background: linear-gradient(
+    137deg,
+    #0581e5 0%,
+    rgba(5, 179, 188, 0.53) 41.7%,
+    rgba(5, 223, 151, 0.31) 100%
+  );
+}
+
+.shadow2 {
+  background: linear-gradient(106deg, #0581e5 0%, #03573b 100%);
+}
+
+.hero {
+  .content {
+    .title1 {
+      font-size: 48px;
+      background: linear-gradient(-45deg, #fff, #fff);
+    }
+    .title2 {
+      font-size: 96px;
+      background: linear-gradient(45deg, #4ac29a, #0591df);
+    }
+    .title3 {
+      color: transparent;
+      font-size: 32px;
+      @apply font-sanR;
+      background: linear-gradient(45deg, #4ac29a, #bdfff3);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+    }
+    .title {
+      @apply font-sanH;
+      color: rgba(#000000, 0.9);
+      text-transform: capitalize;
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-stroke: 2px transparent;
+      padding: 0 5px;
+      text-align: center;
+      line-height: 1.2;
+    }
+  }
+}
+
+.btn-grd {
+  position: relative;
+  z-index: 1;
+  @apply font-sanB;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+  height: 60px;
+  border-radius: 46px;
+  background: linear-gradient(134deg, #19d079 0%, #0591df 100%);
+  box-shadow: 0px 16px 31px 0px rgba(97, 212, 255, 0.16),
+    0px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(134deg, #19d079 0%, #0591df 100%);
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(#000, 0.2);
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  &:hover {
+    color: #fff;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.btn-grd2 {
+  font-size: 20px;
+  @apply font-sanB;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 396px;
+  height: 76px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #e43a15 0%, #e65245 100%);
+  transform: translateY(0);
+  transition: all 0.2s ease;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+.box-grd {
+  border: 11px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to right bottom,
+    #26fde6,
+    #0591df 30%,
+    #000
+  );
+}
+
+.strategy-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .img {
+    width: 128px;
+    height: 128px;
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .title {
+    font-size: 40px;
+    @apply font-sanM;
+    line-height: 65px;
+    margin-bottom: 10px;
+  }
+  &:first-child .title {
+    color: transparent;
+    background: linear-gradient(45deg, #00f5a0, #00d9f5);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+  }
+  &:nth-child(2) .title {
+    color: transparent;
+    background: linear-gradient(45deg, #ffe259, #ffa751);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+  }
+  &:last-child .title {
+    color: transparent;
+    background: linear-gradient(45deg, #ff512f, #f09819);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+  }
+  .desc {
+    font-size: 20px;
+    @apply font-sanT;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 50px;
+    margin-bottom: 20px;
+  }
+  .btn {
+    transform: translateX(0);
+    transition: all 0.2s ease-in;
+    &:hover {
+      transform: translateX(4px);
+    }
+  }
+}
+
+.owner-grid {
+  background: linear-gradient(to bottom, #4f4f51, #343331);
+  .block {
+    background: linear-gradient(45deg, #00f5a0, #00d9f5);
+  }
+}
+
+.benefit {
+  .title {
+    font-size: 48px;
+    background: linear-gradient(45deg, #4ac29a, #0591df);
+    @apply font-sanB;
+    color: rgba(#000000, 0.9);
+    text-transform: capitalize;
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px transparent;
+    padding: 0 5px;
+    text-align: center;
+    line-height: 1.2;
+  }
+}
+
+.seminar {
+  .title {
+    font-size: 48px;
+    background: linear-gradient(45deg, #4ac29a, #0591df);
+    @apply font-sanB;
+    color: rgba(#000000, 0.9);
+    text-transform: capitalize;
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px transparent;
+    padding: 0 5px;
+    line-height: 1.2;
+  }
+}
+
+.testi-slider {
+  .slick-arrow.slick-next,
+  .slick-arrow.slick-prev {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 40px !important;
+    opacity: 0.5;
+  }
+}
+
+.ex-box {
+  border-radius: 20px;
+  background: linear-gradient(#2b2b2b99, #2b2b2b99) padding-box,
+    linear-gradient(to right, #03573b, #0591df) border-box;
+  border: 4px solid transparent;
+  .title {
+    font-size: 24px;
+    color: transparent;
+    @apply font-sanSB;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #00f5a0, #00d9f5);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+  }
+}
+
+// Responsive
+@media (max-width: 1024px) {
+  .testi-slider {
+    .slick-arrow.slick-next {
+      right: -10px;
+    }
+    .slick-arrow.slick-prev {
+      left: -10px;
+    }
+  }
+  .hero {
+    .content {
+      .title3 {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    .content {
+      .title1 {
+        font-size: 28px;
+      }
+      .title2 {
+        font-size: 52px;
+      }
+      .title3 {
+        font-size: 14px;
+      }
+    }
+  }
+  .btn-grd2 {
+    width: 240px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .strategy-item {
+    .img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+    .title {
+      font-size: 25px;
+      line-height: 1.6;
+      margin-bottom: 0px;
+    }
+    .desc {
+      font-size: 16px;
+      margin-bottom: 10px;
+      padding: 0 10px;
+    }
+  }
+
+  .benefit {
+    .title {
+      font-size: 32px;
+    }
+  }
+
+  .seminar {
+    .title {
+      font-size: 32px;
+    }
+  }
+
+  .testi-slider {
+    .slick-arrow.slick-next,
+    .slick-arrow.slick-prev {
+      width: 30px !important;
+      height: 30px !important;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      font-size: 30px !important;
+    }
+    .slick-arrow.slick-next {
+      right: -15px;
+    }
+    .slick-arrow.slick-prev {
+      left: -15px;
+    }
+  }
+
+  .ex-box {
+    .title {
+      font-size: 16px;
+    }
+  }
+}
+
+// Fonts
+@font-face {
+  font-family: "SanUL";
+  src: url("../public/fonts/SanFranciscoDisplay-Ultralight.otf");
+}
+@font-face {
+  font-family: "SanL";
+  src: url("../public/fonts/SanFranciscoDisplay-Light.otf");
+}
+@font-face {
+  font-family: "SanT";
+  src: url("../public/fonts/SanFranciscoDisplay-Thin.otf");
+}
+@font-face {
+  font-family: "SanR";
+  src: url("../public/fonts/SanFranciscoDisplay-Regular.otf");
+}
+@font-face {
+  font-family: "SanM";
+  src: url("../public/fonts/SanFranciscoDisplay-Medium.otf");
+}
+@font-face {
+  font-family: "SanSB";
+  src: url("../public/fonts/SanFranciscoDisplay-Semibold.otf");
+}
+@font-face {
+  font-family: "SanB";
+  src: url("../public/fonts/SanFranciscoDisplay-Bold.otf");
+}
+@font-face {
+  font-family: "SanBl";
+  src: url("../public/fonts/SanFranciscoDisplay-Black.otf");
+}
+@font-face {
+  font-family: "SanH";
+  src: url("../public/fonts/SanFranciscoDisplay-Heavy.otf");
+}
+
+.light {
+  animation: Light 0.8s linear infinite;
+}
+
+.light2 {
+  animation: Light2 0.6s linear infinite;
+}
+
+@keyframes Light {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.6);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes Light2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
